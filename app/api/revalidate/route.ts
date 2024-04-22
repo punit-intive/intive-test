@@ -6,7 +6,7 @@ export async function POST(request: Request) {
   const requestHeaders = new Headers(request.headers);
   const secret = requestHeaders.get('x-vercel-revalidation-key');
 
-  if (secret !== process.env.CONTENTFUL_REVALIDATION_SECRET) {
+  if (secret !== process.env.CONTENTFUL_REVALIDATE_SECRET) {
     return NextResponse.json({ message: 'Invalid secret' }, { status: 401 });
   }
 

@@ -1,6 +1,7 @@
 import { getBlog } from '@/lib/contentful/api';
 import { cookies, draftMode } from 'next/headers';
 import { redirect } from 'next/navigation';
+import { env } from "@/env"
 
 export async function GET(request: Request) {
   // Parse query string parameters
@@ -14,7 +15,7 @@ export async function GET(request: Request) {
   }
 
   // This secret should only be known to this route handler and the CMS
-  if (secret !== process.env.CONTENTFUL_PREVIEW_SECRET) {
+  if (secret !== env.CONTENTFUL_PREVIEW_SECRET) {
     return new Response('Invalid token', { status: 401 });
   }
 

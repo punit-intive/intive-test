@@ -1,12 +1,13 @@
 import { NextResponse } from 'next/server';
 import { revalidatePath, revalidateTag } from 'next/cache';
+import { env } from "@/env"
 
 // Contentful's webhook will send a POST request to this endpoint to revalidate the page
 export async function POST(request: Request) {
   const requestHeaders = new Headers(request.headers);
   const secret = requestHeaders.get('x-vercel-revalidation-key');
 
-  if (secret !== process.env.CONTENTFUL_REVALIDATE_SECRET) {
+  if (secret !== env.CONTENTFUL_REVALIDATE_SECRET) {
     return NextResponse.json({ message: 'Invalid secret' }, { status: 401 });
   }
 

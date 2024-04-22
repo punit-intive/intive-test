@@ -16,6 +16,7 @@ export interface BlogProps {
   date: Date;
   details: {
     json: any;
+    links?: any;
   };
 }
 
@@ -30,6 +31,19 @@ const BLOG_GRAPHQL_FIELDS = `
   summary
   details {
     json
+    links {
+      assets {
+          block {
+              fileName
+              title
+              description
+              url
+              sys {
+                  id
+              }
+          }
+      }
+    }
   }
   date
   author

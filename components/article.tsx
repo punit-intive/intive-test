@@ -13,6 +13,32 @@ import {
 } from '@contentful/live-preview/react';
 import { BlogProps } from '@/lib/contentful/api';
 import { ContentfulLivePreview } from '@contentful/live-preview';
+import { BLOCKS } from "@contentful/rich-text-types";
+
+function renderOptions(links: { assets: { block: any; }; entries: { block: any; inline: any; }; }) {
+  // create an asset map
+  const assetMap = new Map();
+  // loop through the assets and add them to the map
+  for (const asset of links.assets.block) {
+    assetMap.set(asset.sys.id, asset);
+  }
+
+  return {
+
+    renderNode: {
+      [BLOCKS.EMBEDDED_ASSET]: (node, next) => {
+        // find the asset in the assetMap by ID
+        const asset = assetMap.get(node.data.target.sys.id);
+
+        // render the asset accordingly
+        return (
+          <img src={asset.url} alt="My image alt text" />
+        );
+      },
+    },
+  };
+}
+
 
 export const Blog = ({ blog }: { blog: BlogProps }) => {
   const updatedBlog = useContentfulLiveUpdates(blog);
@@ -62,7 +88,7 @@ export const Blog = ({ blog }: { blog: BlogProps }) => {
                   className="max-w-[900px] text-zinc-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-zinc-400"
                   {...inspectorProps({ fieldId: 'details' })}
                 >
-                  {documentToReactComponents(updatedBlog.details.json)}
+                  {documentToReactComponents(updatedBlog.details.json, renderOptions(updatedBlog.details.links))}
                 </div>
               </div>
             </div>

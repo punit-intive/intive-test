@@ -13,9 +13,9 @@ import {
 } from '@contentful/live-preview/react';
 import { BlogProps } from '@/lib/contentful/api';
 import { ContentfulLivePreview } from '@contentful/live-preview';
-import { BLOCKS } from "@contentful/rich-text-types";
+import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 
-function renderOptions(links: { assets: { block: any; }; entries: { block: any; inline: any; }; }) {
+function renderOptions(links: any) {
   // create an asset map
   const assetMap = new Map();
   // loop through the assets and add them to the map
@@ -26,13 +26,13 @@ function renderOptions(links: { assets: { block: any; }; entries: { block: any; 
   return {
 
     renderNode: {
-      [BLOCKS.EMBEDDED_ASSET]: (node, next) => {
+      [BLOCKS.EMBEDDED_ASSET]: (node: any) => {
         // find the asset in the assetMap by ID
         const asset = assetMap.get(node.data.target.sys.id);
 
         // render the asset accordingly
         return (
-          <img src={asset.url} alt="My image alt text" />
+          <img src={asset.url} alt={asset.description} />
         );
       },
     },

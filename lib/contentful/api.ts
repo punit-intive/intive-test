@@ -1,4 +1,4 @@
-import { env } from "@/env"
+import { env } from '@/env';
 
 export interface BlogProps {
   sys: {
@@ -59,7 +59,11 @@ const BLOG_GRAPHQL_FIELDS = `
   }
 `;
 
-async function fetchGraphQL(query: string, preview = false, tags: [string] = ['']) {
+async function fetchGraphQL(
+  query: string,
+  preview = false,
+  tags: [string] = ['']
+) {
   return fetch(
     `https://graphql.contentful.com/content/v1/spaces/${env.CONTENTFUL_SPACE_ID}`,
     {
@@ -77,11 +81,13 @@ async function fetchGraphQL(query: string, preview = false, tags: [string] = [''
       // Add a Next.js specific header with tags to revalidate the content:
       // Associate all fetches for blogs with an "blogs" cache tag so content can be revalidated or updated from Contentful on publish
       next: { tags },
-    },
+    }
   ).then((response) => response.json());
 }
 
-function extractBlogEntries(fetchResponse: { data: { blogPostCollection: { items: any } } }) {
+function extractBlogEntries(fetchResponse: {
+  data: { blogPostCollection: { items: any } };
+}) {
   return fetchResponse?.data?.blogPostCollection?.items;
 }
 
@@ -97,7 +103,7 @@ export async function getAllBlogs(limit = 3, isDraftMode = false) {
         }
       }`,
     isDraftMode,
-    ['blogs'],
+    ['blogs']
   );
 
   return extractBlogEntries(blogs);
@@ -115,7 +121,7 @@ export async function getBlog(slug: string, isDraftMode = false) {
         }
       }`,
     isDraftMode,
-    [slug],
+    [slug]
   );
   return extractBlogEntries(blog)[0];
 }

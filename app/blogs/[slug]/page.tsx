@@ -13,7 +13,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPage({ params }: { params: { slug: string } }) {
+export default async function BlogPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const { isEnabled } = draftMode();
   const blog = await getBlog(params.slug, isEnabled);
 
@@ -22,11 +26,11 @@ export default async function BlogPage({ params }: { params: { slug: string } })
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white">
-      <section className="w-full">
-        <div className="container space-y-12 px-4 md:px-6">
+    <main className='flex min-h-screen flex-col items-center justify-between bg-white p-24'>
+      <section className='w-full'>
+        <div className='container space-y-12 px-4 md:px-6'>
           <ContentfulPreviewProvider
-            locale="en-US"
+            locale='en-US'
             enableInspectorMode={isEnabled}
             enableLiveUpdates={isEnabled}
           >

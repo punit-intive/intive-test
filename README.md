@@ -7,7 +7,7 @@ This is an example project that demonstrates how to use the `@contentful/live-pr
 Install the dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## Step 2. Environment variables
@@ -36,13 +36,13 @@ Next, go to **Settings > CMA tokens** and create a new token by clicking **Creat
 
 With the space ID and management access token at hand run the following command:
 
-```
+```bash
 npx cross-env CONTENTFUL_SPACE_ID=YOUR_SPACE_ID CONTENTFUL_MANAGEMENT_TOKEN=XXX npm run setup
 ```
 
 This command will create the needed content structure and set up your Contentful space ready to use. The output should look as follows:
 
-```
+```bash
 > cms-contentful@1.0.0 setup /Users/john.doe/documents/next-app-router
 > node ./contentful/setup.js $CONTENTFUL_SPACE_ID $CONTENTFUL_MANAGEMENT_TOKEN
 
@@ -93,7 +93,7 @@ Next, add these fields (you don't have to modify the settings unless specified):
 
 Save the content type and continue.
 
-**Content model overview**
+## Content model overview
 
 ![Content model overview](./img/content-model.png)
 
@@ -106,7 +106,7 @@ In order to enable the live preview feature in your local development environmen
 In your Contentful space, go to **Settings > Content preview** and add a new content preview for development.
 The **Name** field may be anything, like `Development preview`. Then, under **Select content types**, check **Blog post** and set its value to:
 
-```
+```bash
 http://localhost:3000/api/enable-draft?secret={CONTENTFUL_PREVIEW_SECRET}&slug={entry.fields.slug}
 ```
 
@@ -134,7 +134,7 @@ In your Contentful space, go to **Settings > Webhooks** and add a new webhook:
 - **Activate:** Check the active checkbox to ensure the webhook is marked as active
 - **Specify the POST URL:** Using the URL from your Vercel deployment, add the path `/api/revalidate` at the end, so it would look something like:
 
-  ```
+  ```bash
   https://<YOUR_VERCEL_DEPLOYMENT_URL>/api/revalidate
   ```
 

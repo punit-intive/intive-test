@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { revalidatePath, revalidateTag } from 'next/cache';
-import { env } from "@/env"
+import { env } from '@/env';
 
 // Contentful's webhook will send a POST request to this endpoint to revalidate the page
 export async function POST(request: Request) {

@@ -47,7 +47,14 @@
           "required": true,
           "validations": [
             {
-              "enabledMarks": ["bold", "italic", "underline", "code", "superscript", "subscript"],
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript"
+              ],
               "message": "Only bold, italic, underline, code, superscript, and subscript marks are allowed"
             },
             {

@@ -1,7 +1,7 @@
 import { getBlog } from '@/lib/contentful/api';
 import { cookies, draftMode } from 'next/headers';
 import { redirect } from 'next/navigation';
-import { env } from "@/env"
+import { env } from '@/env';
 
 export async function GET(request: Request) {
   // Parse query string parameters
@@ -46,6 +46,6 @@ export async function GET(request: Request) {
   // Redirect to the path from the fetched post
   // We don't redirect to searchParams.slug as that might lead to open redirect vulnerabilities
   redirect(
-    `/blogs/${blog.slug}?x-vercel-protection-bypass=${bypass}&x-vercel-set-bypass-cookie=samesitenone`,
+    `/blogs/${blog.slug}?x-vercel-protection-bypass=${bypass}&x-vercel-set-bypass-cookie=samesitenone`
   );
 }

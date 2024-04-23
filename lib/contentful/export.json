@@ -1,9 +1,56 @@
 {
   "contentTypes": [
     {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ta7ivy7tgm6y"
+          }
+        },
+        "id": "blogPost",
+        "type": "ContentType",
+        "createdAt": "2024-04-22T13:33:07.213Z",
+        "updatedAt": "2024-04-23T07:36:10.571Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2024-04-23T07:36:10.571Z",
+        "firstPublishedAt": "2024-04-22T13:33:07.707Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4vryF4W2mOtZw27eoZhZtK"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/ta7ivy7tgm6y/environments/master/content_types/blogPost"
+      },
+      "displayField": "title",
       "name": "Blog Post",
       "description": "",
-      "displayField": "title",
       "fields": [
         {
           "id": "title",
@@ -47,15 +94,8 @@
           "required": true,
           "validations": [
             {
-              "enabledMarks": [
-                "bold",
-                "italic",
-                "underline",
-                "code",
-                "superscript",
-                "subscript"
-              ],
-              "message": "Only bold, italic, underline, code, superscript, and subscript marks are allowed"
+              "enabledMarks": ["bold", "italic", "underline"],
+              "message": "Only bold, italic, and underline marks are allowed"
             },
             {
               "enabledNodeTypes": [
@@ -63,13 +103,10 @@
                 "heading-2",
                 "heading-3",
                 "heading-4",
-                "heading-5",
-                "heading-6",
                 "unordered-list",
                 "ordered-list",
                 "blockquote",
                 "hr",
-                "table",
                 "hyperlink",
                 "entry-hyperlink",
                 "asset-hyperlink",
@@ -77,7 +114,7 @@
                 "embedded-entry-inline",
                 "embedded-asset-block"
               ],
-              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, unordered list, ordered list, quote, horizontal rule, table, link to Url, link to entry, link to asset, block entry, inline entry, and asset nodes are allowed"
+              "message": "Only heading 1, heading 2, heading 3, heading 4, unordered list, ordered list, quote, horizontal rule, link to Url, link to entry, link to asset, block entry, inline entry, and asset nodes are allowed"
             },
             {
               "nodes": {}
@@ -127,19 +164,115 @@
           "omitted": false,
           "linkType": "Asset"
         }
-      ],
+      ]
+    }
+  ],
+  "tags": [],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "ta7ivy7tgm6y",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 5,
+        "createdAt": "2024-04-22T13:33:07.878Z",
+        "createdBy": {
+          "sys": {
+            "id": "4vryF4W2mOtZw27eoZhZtK",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2024-04-23T07:36:11.572Z",
+        "updatedBy": {
+          "sys": {
+            "id": "65PLM1Fl1CKXpwdSw94054",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blogPost",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "summary",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "details",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "date",
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "author",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "categoryName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "heroImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": []
+      },
       "sys": {
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "ajeimvyr1mkg"
+            "id": "ta7ivy7tgm6y"
           }
         },
-        "id": "blogPost",
-        "type": "ContentType",
-        "createdAt": "2024-02-13T12:27:21.813Z",
-        "updatedAt": "2024-02-13T12:47:27.670Z",
+        "id": "4vVPVm8kPfFsws6sSFfvNn",
+        "type": "Entry",
+        "createdAt": "2024-04-22T13:33:54.671Z",
+        "updatedAt": "2024-04-23T08:00:04.472Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -147,32 +280,2168 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 21,
-        "publishedAt": "2024-02-13T12:47:27.670Z",
-        "firstPublishedAt": "2024-02-13T12:27:22.485Z",
+        "publishedVersion": 53,
+        "publishedAt": "2024-04-23T08:00:04.472Z",
+        "firstPublishedAt": "2024-04-22T13:35:28.077Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "5dRQELB3imx6EN5FvaeyO8"
+            "id": "65PLM1Fl1CKXpwdSw94054"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "5dRQELB3imx6EN5FvaeyO8"
+            "id": "4vryF4W2mOtZw27eoZhZtK"
           }
         },
-        "publishedCounter": 11,
-        "version": 22,
+        "publishedCounter": 20,
+        "version": 54,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "5dRQELB3imx6EN5FvaeyO8"
+            "id": "4vryF4W2mOtZw27eoZhZtK"
+          }
+        },
+        "automationTags": [],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/ta7ivy7tgm6y/environments/master/entries/4vVPVm8kPfFsws6sSFfvNn"
+      },
+      "fields": {
+        "title": {
+          "en-US": "The Tech Trends Driving three key industries in 2024"
+        },
+        "slug": {
+          "en-US": "the-tech-trends-driving-3-key-industries-in-2024"
+        },
+        "summary": {
+          "en-US": "Flying taxis and satellite phones featured in the BBC’s 2023 tech predictions, but aside from Blade Runner style inventions, what will be the tech trends that influence industries that are the backbone of everyday life?"
+        },
+        "details": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "2022 already saw the mass adoption of AI, machine learning, blockchain, AR, VR, quantum computing, DevOps, and more across verticals. At the turn of the new year, tech is set to become even more sophisticated, and its impact on global business and societal issues more profound.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "In the retail, fintech, and automotive sectors,",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " emerging tech trends",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " will not only streamline operations and deliver greater value to end users, they’ll contribute to a fairer, sustainable world. Specifically, MACH-powered, composable platforms, cybersecurity, and sustainability will define ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "these tech landscapes in 2023",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ". ",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Let’s check out top tech trends in 2023.",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "MACH platforms for more holistic shopping experience in retail",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "E-commerce sales in the third quarter of 2022 accounted for close to ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://www.census.gov/retail/mrts/www/data/pdf/ec_current.pdf"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "15% of total sales",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " in the US. With such a significant market share, digital retailers have to ensure that their tech infrastructure gives them a real competitive and economic advantage.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://intive.com/insights/how-the-mach-framework-can-fuel-media-and-content-companies-growth"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "MACH",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " platforms (Microservices-based, API-first, Cloud-native, and Headless) enable business to quickly create and deploy new products and services. With small, independent components that can be combined and reconfigured, retail businesses can utilize MACH platforms to ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "launch new online shopping experiences for customers.",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " Not to mention, MACH lends itself well to multiple implementation types, including B2B, B2C, online marketplaces, contactless stores, and endless aisle solutions, maximizing retailers’ visibility and offerings in all corners of the digital realm.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Microservices for product catalog management, payment processing, and order fulfillment tasks can also be connected and customized to better meet the business and customer needs. And, because MACH components are cloud-native, ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "they allow for greater scalability",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " – businesses can add or remove parts to accommodate changing workloads and demands.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Robust cybersecurity for stronger shields in fintech",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "More tech trends? ",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "By 2025, ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://cybersecurityventures.com/wp-content/uploads/2020/12/ArcserveDataReport2020.pdf"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "100 zettabytes",
+                        "marks": [
+                          {
+                            "type": "underline"
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " of data will be stored in the cloud; for reference, ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "one zettabyte is the equivalent of around 250 billion DVDs",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ". With swaths of corporate and personal information stored digitally, businesses have to make resilient cybersecurity a priority – particularly in fintech, where data breaches have a high price for organizations and the people they serve.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Popular fintech ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://techcrunch.com/2022/09/20/revolut-cyberattack-thousands-exposed/"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Revolut suffered a data breach in September",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ", where the personal information of over 50,000 users was exposed. In 2022 as a whole, the average cost of a data breach in the ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://www.statista.com/topics/9918/cyber-crime-and-the-financial-industry-in-the-united-states/#:~:text=In%202022%2C%20the%20average%20cost,over%20four%20million%20U.S.%20dollars."
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "financial industry worldwide was $6 million",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ".",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Improved data protection, development and operational security, design and engineering, and innovation are ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "key to advanced cybersecurity",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ". Engineers working on fintech platforms will implement robust encryption technologies and secure storage systems, all while adhering to strict privacy regulations. Likewise, secure coding practices and test protocols will secure the management of development environments and production systems.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "At the same time, fintech players must take a proactive approach to designing systems and processes that bake security measures into early development – not simply retrofitted after a threat has taken place. Doing so means ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "embracing new technologies to stay ahead of the curve",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ", including strong encryption policies and state-of-the-art security protocols.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Sustainable solutions for lower energy consumption in automotive",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Without doubt, ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "sustainability is (and has been) at the forefront of business in recent years",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ". Being sustainable is about preventing the depletion of natural and physical resources, and is an element of corporate ethics to rectify long-term damage caused by a focus on short-term profits.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "The automotive industry has long been under scrutiny when it comes to sustainability, but has taken measures to improve. Between 2019 and 2022, the deployment of sustainable supply chain ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://www.capgemini.com/insights/research-library/sustainability-in-automotive?utm_source=pr&utm_medium=referral&utm_content=automotive_none_link_pressrelease_none&utm_campaign=Auto_cri_sustainability_automotive"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "initiatives in the automotive space rose by 15%",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ".",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Moving forward, the industry needs to uptake ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://principles.green/"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "green coding principles",
+                        "marks": [
+                          {
+                            "type": "underline"
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " to design and develop energy-efficient software that minimizes its users’ environmental impact. For example, ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "companies can optimize their code to lower the energy needed to run it",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ", or use ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://intive.com/services/cloud-computing"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "cloud computing",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " to reduce the need for on-premise infrastructure. Similarly, telematics and connected-car technologies can improve fuel efficiency and reduce emissions by optimizing routes, traffic flow, and vehicle performance.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Elsewhere, digital twins can help companies become more efficient and minimize their carbon footprint by replicating production lines and entire factories or shop floors. These ‘twins’ remove the inherently wasteful trial-and-error approach from manufacturing, and according to research, push industries closer to targets like the UN Sustainable Development Goals.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Tech trends 2023 - conclusions",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "As the year unfolds, MACH powered composable platforms, cybersecurity, and sustainable solutions will play a prominent role in protecting and innovating digital products, as well as promoting greener practices. For the years ahead then, ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "these are the tech trends that will support companies",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " to take greater care of people and the planet.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "date": {
+          "en-US": "2023-11-29T00:00+02:00"
+        },
+        "author": {
+          "en-US": "Thomas Kräuter"
+        },
+        "categoryName": {
+          "en-US": "E-Commerce"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "ewXz7vtf8yGIgGwC796kt"
+            }
           }
         }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ta7ivy7tgm6y"
+          }
+        },
+        "id": "1tl4TGzrZGZhQeOhbXXYSm",
+        "type": "Entry",
+        "createdAt": "2024-04-22T13:35:32.839Z",
+        "updatedAt": "2024-04-23T09:51:57.891Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 23,
+        "publishedAt": "2024-04-23T09:51:57.891Z",
+        "firstPublishedAt": "2024-04-22T13:37:40.274Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4vryF4W2mOtZw27eoZhZtK"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 24,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4vryF4W2mOtZw27eoZhZtK"
+          }
+        },
+        "automationTags": [],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/ta7ivy7tgm6y/environments/master/entries/1tl4TGzrZGZhQeOhbXXYSm"
+      },
+      "fields": {
+        "title": {
+          "en-US": "How Innovation in Car Interfaces and Control Devices is Shaping the Future of"
+        },
+        "slug": {
+          "en-US": "how-innovation-in-car-interfaces-and-control-devices-is-shaping-the-future"
+        },
+        "summary": {
+          "en-US": "Picture this. You’re heading out on a family road trip and getting ready to leave in your car."
+        },
+        "details": {
+          "en-US": {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "No key is required – your phone connects to your car and identifies you as the owner. The trunk pops open automatically as you set the navigation destination to your favorite beach house which always means a lot of luggage.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "You get into the driver’s seat which moves back into your saved position after your partner was driving it yesterday. The touchscreen display extends out from the dashboard, already configured with your favorite apps. Spotify road trip playlist? Check. Weather report for the day? Check. Route navigation complete with information on the next available charging station? Check. Apple Pay integration for on-the-road purchases? Check.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Your kid is in the backseat, choosing which game they want to play during the drive. You set off, and feel reassured by the car’s innovative safety features. You drive hands-free at a safe distance from the vehicle in front of you, with the car warning you if your attention is required. And no buttons are needed if you want to jump to the next song or feel like some fresh air – you just use voice commands while keeping your eyes and attention on the road.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "This might sound like a futuristic scenario, but it’s available today thanks to the rapid evolution of infotainment interfaces and control devices in the automotive industry.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Drivers and passengers alike are increasingly expecting immersive and fulfilling journeys that go beyond just getting from A to B. Innovative interfaces provide real-time updates on the vehicle's status and its surroundings, cater to individual preferences and entertainment desires, and improve safety on the road.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "From sleek head-up displays and digital side mirrors to phone connectivity via Android Auto or Apple CarPlay, to internet connection in vehicles, the landscape of automotive interfaces is transforming – and shows no sign of slowing down.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Let’s dive into the key areas of innovation for car interfaces and control devices, and how carmakers and OEMs can continue to innovate and exceed user expectations.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Enhancing Safety on the Road",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-2"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "There is no doubt that technological advancements have enhanced safety features in modern vehicles.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Blind-spot assistance, for example, automatically corrects the steering wheel or even activates the brakes to avoid a collision when the driver is turning and there’s an obstacle they can’t see. Cross-traffic warning helps drivers detect other vehicles, cyclists or pedestrians that may be about to cross in front of or behind the car.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Voice command in vehicles provides hands-free control, allowing drivers to stay focused on the road while accessing various functionalities. Gesture controls enable intuitive interaction with vehicle systems, without having to push physical buttons or tap a screen.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Moreover, eye tracking can detect driver focus and provide supplementary information through head-up displays or infotainment systems, enhancing safety and convenience on the road. All of these futuristic features help prevent accidents that occur because of driver distraction or lack of visibility.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Advances in Smartphone Integration",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-2"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "With the integration of smartphones, drivers can effortlessly prewarm their cars and initiate navigation – even before entering the vehicle. They can also easily customize their apps and interface layouts, enhancing the user experience.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Improved connectivity between cars and smartphones enables seamless music streaming and navigation, while voice control via smartphone offers hands-free operation, promoting safety on the road. Direct phone-to-car connections enable drivers to handle calls and messages without the need to manipulate their phones directly, further enhancing safety.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "However, there may be compatibility issues with certain smartphone models or operating systems, which can hinder seamless integration. Security concerns, including potential privacy violations by malicious apps, also pose risks.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Complex smartphone user interfaces, particularly cluttered apps, may distract drivers, offsetting the benefits of integration. To combat these challenges, carmakers and OEMs must ensure they adopt advanced cybersecurity features and design functional and straightforward interfaces that don’t confuse or distract drivers.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "3IyeeXCiXrE2LzOoX0qQGI",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [],
+                "nodeType": "embedded-asset-block"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "In-car Gaming: Entertainment On the Go",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-2"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "In-car gaming is emerging as a trend for both drivers and passengers. Now drivers can easily immerse themselves in a few rounds of their favorite game while waiting for the car to charge or sitting in standstill traffic, and previously-tedious journeys will fly by for passengers as they play.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Some car manufacturers, such as Tesla, even allow the driver to use the steering wheel and pedals for input during ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://www.youtube.com/watch?v=VT_T2gbLong"
+                    },
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [],
+                        "value": "parked gaming sessions",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": ". Other vehicles offer connectivity with smartphones or controllers, enabling multiplayer collaboration.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "In-car gaming may also serve as a strategy to foster brand loyalty, particularly among younger passengers, by creating memorable experiences that they look back on nostalgically.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "However, safety measures should always be in place, restricting driver gameplay to when the car is stationary or in full-piloted mode. The car should seamlessly switch back to drive mode instantly whenever the driver's attention and awareness are required.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Looking ahead, we will likely see the integration of gaming consoles directly into cars, enabling passengers to continue their gaming experiences seamlessly from home to car. However, in the interim, prioritizing casual games that do not demand excessive performance ensures a safer and more enjoyable gaming experience within the confines of the vehicle.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "It All Starts With a Prototype",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-2"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "intive tackles these challenges head-on by creating connected HMI prototypes that set the stage for building the final products down the line.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "These prototypes cater to all types of displays and devices, including smartphones. They are designed to communicate seamlessly with each other and with the car or driving simulator using our in-house communication framework. Our team is also exploring unconventional input devices for the design process, such as virtual and extended reality with hand tracking, enabling interaction with virtual content or physical devices in immersive environments.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Our flagship HMI demonstrator showcases our skills in UI creation and implementation. The demonstrator seamlessly combines 2D and 3D content across multiple displays, along with the integration of physical buttons.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "What’s more, our virtual reality projects enable clients to immerse themselves in new interface designs without the need for physical car prototypes, saving on both costs and time. With these cutting-edge technologies, a constantly testing mindset, and our commitment to innovation, intive is shaping the future of HMIs in cars.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Just take a look at ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://intive.com/work/automotive/audi-case-study"
+                    },
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [],
+                        "value": "our work with Audi",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": " to see this in action. We collaborated with the industry-leading carmaker to build an intuitive HMI system that made the driver’s journey easier, safer, and more enjoyable.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Looking Ahead: At the Forefront of Automotive Technology",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-2"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "This is only just the beginning when it comes to innovations in displays, interfaces, and control devices. For example, in the future, exterior displays will enable vehicles to communicate with other road users.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "As autonomous driving advances, traditional controls like steering wheels and pedals will become obsolete. Head-up displays will expand to cover entire windshields, providing real-time information to drivers. Inside cars, screens will seamlessly blend into the interior design. Moreover, larger screens will offer enhanced entertainment options for passengers, such as watching movies from the back seats.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "intive stays ahead of the curve by anticipating the changing needs of our clients. We are actively developing software for displays that are sleek, intuitive to use, and have safety features integrated. Our collaborative and iterative approach allows our clients to trial out flexible and easily adjustable prototypes that help them explore different features and preferences.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Our team comprises experts in various domains of software development and technology stacks, ensuring that we remain at the forefront of industry advancements. Through these initiatives, intive continually meets and exceeds the evolving needs of our clients.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Are you ready to elevate your automotive interface experience? Discover how intive is steering the future of car HMIs at the upcoming Car.HMI event. Whether you're looking to discuss industry trends or book an expert consultation for your business, we're here to help redefine your journey.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://intive.com/meet-intive-at-car-hmi-europe"
+                    },
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "value": "Book a slot with one of our experts today!",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "date": {
+          "en-US": "2024-04-15T00:00+02:00"
+        },
+        "author": {
+          "en-US": "Juliane Pawlow, Senior Developer Automotive"
+        },
+        "categoryName": {
+          "en-US": "Automotive"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1Ufld5T3pOgy8P78pAl4Uq"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ta7ivy7tgm6y"
+          }
+        },
+        "id": "ewXz7vtf8yGIgGwC796kt",
+        "type": "Asset",
+        "createdAt": "2024-04-22T12:26:59.415Z",
+        "updatedAt": "2024-04-22T12:27:13.677Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-04-22T12:27:13.677Z",
+        "firstPublishedAt": "2024-04-22T12:27:13.677Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/ta7ivy7tgm6y/environments/master/assets/ewXz7vtf8yGIgGwC796kt"
+      },
+      "fields": {
+        "title": {
+          "en-US": "header tech trends 1"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ta7ivy7tgm6y/ewXz7vtf8yGIgGwC796kt/824708f2e71a9fe6ca28fb82f93090bc/header_tech_trends_1.png",
+            "details": {
+              "size": 106914,
+              "image": {
+                "width": 1300,
+                "height": 650
+              }
+            },
+            "fileName": "header_tech_trends_1.png",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ta7ivy7tgm6y"
+          }
+        },
+        "id": "1Ufld5T3pOgy8P78pAl4Uq",
+        "type": "Asset",
+        "createdAt": "2024-04-22T12:30:41.624Z",
+        "updatedAt": "2024-04-22T12:30:54.552Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-04-22T12:30:54.552Z",
+        "firstPublishedAt": "2024-04-22T12:30:54.552Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/ta7ivy7tgm6y/environments/master/assets/1Ufld5T3pOgy8P78pAl4Uq"
+      },
+      "fields": {
+        "title": {
+          "en-US": "HEADER car interfaces"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ta7ivy7tgm6y/1Ufld5T3pOgy8P78pAl4Uq/6e854f3616f2a41679d304d941622dc5/HEADER_car_interfaces.png",
+            "details": {
+              "size": 252182,
+              "image": {
+                "width": 1300,
+                "height": 650
+              }
+            },
+            "fileName": "HEADER_car_interfaces.png",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ta7ivy7tgm6y"
+          }
+        },
+        "id": "3IyeeXCiXrE2LzOoX0qQGI",
+        "type": "Asset",
+        "createdAt": "2024-04-22T12:31:13.666Z",
+        "updatedAt": "2024-04-22T12:31:23.964Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-04-22T12:31:23.964Z",
+        "firstPublishedAt": "2024-04-22T12:31:23.964Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/ta7ivy7tgm6y/environments/master/assets/3IyeeXCiXrE2LzOoX0qQGI"
+      },
+      "fields": {
+        "title": {
+          "en-US": "ADDITIONAL IMAGE hmi demonstrator"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ta7ivy7tgm6y/3IyeeXCiXrE2LzOoX0qQGI/44a6c35a3edbd149cdc4edea55f196f3/ADDITIONAL_IMAGE_hmi_demonstrator.png",
+            "details": {
+              "size": 1974086,
+              "image": {
+                "width": 1810,
+                "height": 905
+              }
+            },
+            "fileName": "ADDITIONAL_IMAGE_hmi_demonstrator.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "7z5NG8NKZxfdR5uym3Jcsp",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ta7ivy7tgm6y"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "29120588-c40f-45e0-a4d0-1acc00acb6e7"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "createdAt": "2024-04-22T11:11:20Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "updatedAt": "2024-04-22T11:11:20Z"
+      }
+    }
+  ],
+  "webhooks": [
+    {
+      "name": "Revalidate",
+      "url": "https://orange-eight-pi.vercel.app/api/revalidate",
+      "httpBasicUsername": null,
+      "topics": [
+        "ContentType.publish",
+        "ContentType.unpublish",
+        "Entry.publish",
+        "Entry.unpublish",
+        "Asset.publish",
+        "Asset.unpublish"
+      ],
+      "filters": [
+        {
+          "equals": [
+            {
+              "doc": "sys.environment.sys.id"
+            },
+            "master"
+          ]
+        },
+        {
+          "equals": [
+            {
+              "doc": "sys.contentType.sys.id"
+            },
+            "blogPost"
+          ]
+        }
+      ],
+      "transformation": {
+        "body": {
+          "tag": "{ /payload/fields/slug/en-US }"
+        }
+      },
+      "active": true,
+      "sys": {
+        "type": "WebhookDefinition",
+        "id": "7DHBeCRxjrjsL2tChtBOUl",
+        "version": 5,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ta7ivy7tgm6y"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "createdAt": "2024-04-22T12:37:18Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4vryF4W2mOtZw27eoZhZtK"
+          }
+        },
+        "updatedAt": "2024-04-22T15:31:00Z"
+      },
+      "headers": [
+        {
+          "key": "x-vercel-revalidation-key",
+          "value": "ContentfulOnlySecret123"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "Author",
+      "description": "Allows editing of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": ["create"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["read"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["update"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["create"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["read"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["update"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
+      },
+      "sys": {
+        "type": "Role",
+        "id": "7zskqSKTuNOyyiDAPw9x57",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ta7ivy7tgm6y"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "createdAt": "2024-04-22T11:11:20Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "updatedAt": "2024-04-22T11:11:20Z"
+      }
+    },
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
+      },
+      "sys": {
+        "type": "Role",
+        "id": "7zsK02BLlipnTqlJENOMaJ",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ta7ivy7tgm6y"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "createdAt": "2024-04-22T11:11:20Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "updatedAt": "2024-04-22T11:11:20Z"
+      }
+    },
+    {
+      "name": "Freelancer",
+      "description": "Allows only editing of content they created themselves",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": ["create"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["create"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["read"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["update"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["delete"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["read"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["update"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["delete"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
+      },
+      "sys": {
+        "type": "Role",
+        "id": "7zt7eFl0D3LX0LkDytbA4p",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ta7ivy7tgm6y"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "createdAt": "2024-04-22T11:11:20Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "updatedAt": "2024-04-22T11:11:20Z"
+      }
+    },
+    {
+      "name": "Translator",
+      "description": "Allows editing of localized fields in the specified language",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": ["read"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["read"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["update"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["update"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
+      },
+      "sys": {
+        "type": "Role",
+        "id": "7ztvMMkHaUoPWJVJUWtHa9",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ta7ivy7tgm6y"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "createdAt": "2024-04-22T11:11:20Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "65PLM1Fl1CKXpwdSw94054"
+          }
+        },
+        "updatedAt": "2024-04-22T11:11:20Z"
       }
     }
   ]

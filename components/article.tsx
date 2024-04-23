@@ -85,7 +85,7 @@ export const Blog = ({ blog }: { blog: BlogProps }) => {
             <div className="space-y-4 md:space-y-6">
               <div className="space-y-2">
                 <div
-                  className="max-w-[900px] text-zinc-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-zinc-400"
+                  className="prose max-w-[900px] text-zinc-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-zinc-400"
                   {...inspectorProps({ fieldId: 'details' })}
                 >
                   {documentToReactComponents(updatedBlog.details.json, renderOptions(updatedBlog.details.links))}

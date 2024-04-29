@@ -1,0 +1,39 @@
+@import "../../../../../styles/variables";
+
+.n-upload-area-file {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &__bar {
+    display: flex;
+    width: 100%;
+    min-height: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-intive-grey-95;
+    border-radius: $radius-rounded;
+    padding: 0.25rem 0.5rem;
+  }
+
+  &__name {
+    color: $color-intive-cerulean;
+    font-weight: 500;
+    margin-right: 0.5rem;
+  }
+
+  &__error {
+    margin-top: 0.2rem;
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+}
+
+.n-upload-area-file--error {
+  .n-upload-area-file__name,
+  .n-upload-area-file__error {
+    color: $color-form-error;
+  }
+}

@@ -1,0 +1,89 @@
+@import "@/styles/_mixins";
+@import "@/styles/_variables";
+
+.page-content {
+  margin: 0 $page-content-margin;
+
+  @include mobile-intive {
+    margin: 0 $page-content-mobile-margin;
+  }
+
+  @include tablet-m-intive {
+    margin: 0 $page-content-tablet-margin;
+  }
+
+  @include tablet-l-intive {
+    margin: 0 $page-content-tablet-l-margin;
+  }
+
+  @include desktop-l-intive {
+    margin: 0 auto;
+    max-width: $min-width-intive-desktop-l;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  &--margin-bottom {
+    margin-bottom: $page-content-margin;
+
+    @include mobile-intive {
+      margin-bottom: $page-content-mobile-vertical-margin;
+    }
+
+    @include tablet-m-intive {
+      margin-bottom: $page-content-tablet-vertical-margin;
+    }
+
+    @include tablet-l-intive {
+      margin-bottom: $page-content-tablet-l-vertical-margin;
+    }
+  }
+
+  &--margin-top {
+    margin-top: $page-content-margin;
+
+    @include mobile-intive {
+      margin-top: $page-content-mobile-vertical-margin;
+    }
+
+    @include tablet-m-intive {
+      margin-top: $page-content-tablet-vertical-margin;
+    }
+
+    @include tablet-l-intive {
+      margin-top: $page-content-tablet-l-vertical-margin;
+    }
+  }
+
+  &--padding-bottom {
+    padding-bottom: $page-content-margin;
+
+    @include mobile-intive {
+      padding-bottom: $page-content-mobile-vertical-margin;
+    }
+
+    @include tablet-m-intive {
+      padding-bottom: $page-content-tablet-vertical-margin;
+    }
+
+    @include tablet-l-intive {
+      padding-bottom: $page-content-tablet-l-vertical-margin;
+    }
+  }
+
+  &--padding-top {
+    padding-top: $page-content-margin;
+
+    @include mobile-intive {
+      padding-top: $page-content-mobile-vertical-margin;
+    }
+
+    @include tablet-m-intive {
+      padding-top: $page-content-tablet-vertical-margin;
+    }
+
+    @include tablet-l-intive {
+      padding-top: $page-content-tablet-l-vertical-margin;
+    }
+  }
+}

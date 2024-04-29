@@ -1,0 +1,55 @@
+@import "@/styles/variables";
+@import "@/styles/mixins";
+
+.app-search-results {
+  flex: 0 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  max-height: 25rem;
+
+  @include tablet-m-intive {
+    max-height: 23rem;
+  }
+
+  @include tablet-l-intive {
+    max-height: 17rem;
+  }
+
+  @include desktop-m-intive-up {
+    max-height: 13rem;
+  }
+
+  & > h4:last-child {
+    margin-bottom: 0;
+  }
+
+  &__result {
+    padding: 2rem 1rem 1rem 1rem;
+    border-bottom: 1px solid $color-intive-brown-grey;
+  }
+
+  &__result:first-of-type {
+    padding: 1rem;
+  }
+
+  a {
+    color: #00619f;
+  }
+
+  &__wrap {
+    overflow-y: auto;
+    height: 100%;
+    padding-right: 0.5rem;
+  }
+
+  &__see-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+  }
+
+  .selected {
+    background-color: $color-intive-grey-95;
+  }
+}

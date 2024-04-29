@@ -1,0 +1,218 @@
+@import "./mixins";
+
+.search-classic {
+  &__clearall {
+    display: none;
+    font-family: MaisonNeue-Demi;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1.14px;
+    color: $color-intive-grey-50;
+    opacity: 0.6;
+  
+    @include tablet-l-intive-up {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  
+  &__clearall > span {
+    cursor: pointer;
+  }
+  
+  &__clearall--active {
+    color: $color-intive-cerulean;
+    opacity: 1;
+  }
+}
+
+.search-classic-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+  padding: 0;
+  color: $color-intive-grey-20;
+
+  @include tablet-l-intive-up {
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  @include tablet-l-intive-up {
+    margin-bottom: 40px;
+  }
+
+  .input-text,
+  .filters-dropdown__control,
+  .filters-dropdown__menu {
+    width: 100%;
+    max-width: 584px;
+
+    @include tablet-l-intive-up {
+      width: 260px;
+    }
+
+    @include desktop-l-intive {
+      width: 310px;
+    }
+  }
+
+  .input-text,
+  .filters-dropdown__control {
+    height: 54px;
+    margin-bottom: 0;
+    background-color: $color-intive-white;
+    border-color: $color-intive-brown-grey;
+    border-radius: unset;
+    cursor: pointer;
+
+    @include tablet-m-intive-up {
+      height: 76px;
+    }
+  }
+
+  .input-text__component {
+    font-family: MaisonNeue;
+    cursor: pointer;
+  }
+
+  .request-form__input-submit {
+    width: 142px;
+    height: 76px;
+    margin-top: 0;
+    background-color: $color-intive-white;
+    border-color: $color-intive-grey-20;
+    color: $color-intive-grey-20;
+  }
+
+  &__filter {
+    width: 100%;
+
+    @include tablet-l-intive-up {
+      width: unset;
+      flex: 1;
+    }
+  }
+
+  &__filter:not(:last-child) {
+    margin-bottom: 32px;
+
+    @include tablet-l-intive-up {
+      margin-bottom: 0;
+    }
+  }
+
+  &__filter > div:first-child {
+    font-family: $font-maison-neue-demi;
+    margin-bottom: 12px;
+    font-size: 24px;
+  }
+
+  .collapsed {
+    display: none;
+  }
+
+  .filters-dropdown {
+    &__control--menu-is-open,
+    &__control--menu-is-open:hover,
+    &__control--is-focused,
+    &__control--is-focused:hover {
+      border-color: $color-intive-brown-grey;
+      box-shadow: unset;
+    }
+
+    &__single-value,
+    &__placeholder,
+    &__value-container {
+      font-size: 1.14rem;
+      color: $color-intive-grey-20;
+      font-family: MaisonNeue;
+
+      @include tablet-m-intive-up {
+        font-size: 1.42rem;
+      }
+    }
+
+    &__indicators,
+    &__dropdown-indicator,
+    &__dropdown-indicator:hover {
+      color: $color-intive-cerulean;
+    }
+
+    &__value-container,
+    &__indicators {
+      padding: 0 11px;
+    }
+
+    &__value-container {
+      @include tablet-m-intive-up {
+        padding: 24px 0 24px 24px;
+      }
+    }
+
+    &__indicators {
+      @include tablet-m-intive-up {
+        padding-right: 24px;
+      }
+    }
+
+    &__indicator-separator {
+      display: none;
+    }
+
+    &__menu {
+      margin-top: 5px;
+      border-radius: unset;
+      z-index: 9999;
+    }
+
+    &__menu-list {
+      padding-top: 0;
+    }
+
+    &__option, &__option input {
+      cursor: pointer;
+    }
+
+    &__option,
+    &__group > div:first-child {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 12px 16px;
+      font-size: 16px;
+      font-family: MaisonNeue-Demi;
+    }
+
+    &__option--is-selected {
+      background-color: unset;
+      color: $color-intive-cerulean;
+    }
+
+    &__option--is-focused,
+    &__option--is-selected:hover {
+      background-color: $color-intive-grey-95;
+    }
+
+    &__group {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__group-heading {
+      padding: 0;
+      margin: 0;
+      font-size: unset;
+      color: unset;
+      text-decoration: unset;
+      text-transform: unset;
+    }
+
+    &__group .filters-dropdown__option {
+      padding-left: 36px;
+    }
+  }
+}

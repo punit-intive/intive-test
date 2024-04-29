@@ -1,0 +1,49 @@
+@import "@/styles/_variables";
+
+@mixin componentBlockDefault {
+  max-width: $form-max-width;
+  position: relative;
+  margin-bottom: 12px;
+  transition: $transition-default;
+
+  &:hover {
+    border-color: $color-intive-black;
+  }
+
+  &--focused {
+    border-color: $color-intive-grey-20;
+  }
+
+  &--error {
+    border-color: $color-form-error;
+    color: $color-form-error;
+  }
+}
+
+@mixin errorBlock {
+  &__error {
+    margin: 8px 0 16px 24px;
+    color: $color-form-error;
+    width: 100%;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__component {
+    &--error {
+      color: $color-form-error;
+    }
+  }
+}
+
+@mixin labelDefault {
+  transition: $transition-default;
+  color: $color-intive-brownish-grey;
+  font-weight: lighter;
+
+  &--error {
+    color: $color-form-error;
+  }
+}

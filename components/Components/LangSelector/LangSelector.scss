@@ -1,0 +1,17 @@
+@import "@/styles/mixins";
+
+.lang-selector {
+  &__link {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &__link:hover,
+  &__link--is-active {
+    color: $color-intive-cerise;
+  }
+}

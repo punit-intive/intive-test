@@ -1,0 +1,16 @@
+@import "@/styles/mixins";
+
+.indicators-arrows-onslide {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+
+  @include tablet-m-intive-up {
+    padding: 1rem 1.5rem;
+  }
+
+  & > div {
+    cursor: pointer;
+  }
+}

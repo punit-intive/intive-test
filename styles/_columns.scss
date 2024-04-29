@@ -1,0 +1,112 @@
+@import "mixins";
+
+.columns {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  margin-top: -0.75rem;
+
+  &:last-child {
+    margin-bottom: -0.75rem;
+  }
+
+  &.is-mobile, &.is-desktop {
+    display: flex;
+  }
+
+  &.is-multiline {
+    flex-wrap: wrap;
+  }
+
+  &.is-gapless {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  &.is-gapless:last-child {
+    margin-bottom: 0;
+  }
+
+  &.is-gapless > .column {
+    margin: 0;
+    padding: 0!important;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(.is-desktop) {
+      display: flex;
+    }
+  }
+}
+
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+
+  &.is-narrow {
+    flex: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    &.is-half-mobile, &.is-half-mobile-intive {
+        flex: none;
+        width: 50%;
+    }
+
+    &.is-full-mobile-intive {
+      flex: none;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &.is-one-third, &.is-one-third-tablet-m-intive-up {
+      flex: none;
+      width: 33.3333%;
+    }
+
+    &.is-half, &.is-half-tablet-m-intive-up {
+      flex: none;
+      width: 50%;
+    }
+
+    &.is-half-desktop {
+      flex: none;
+      width: 50%;
+    }
+
+    &.is-one-quarter, &.is-one-quarter-tablet, &.is-one-quarter-tablet-m-intive-up {
+      flex: none;
+      width: 25%;
+    }
+
+    &.is-4 {
+      flex: none;
+      width: 33.33333%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    &.is-one-third-desktop {
+        flex: none;
+        width: 33.3333%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1408px) {
+    &.is-half-desktop {
+        flex: none;
+        width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 1216px) {
+    &.is-one-third-widescreen {
+        flex: none;
+        width: 33.3333%;
+    }
+  }
+}

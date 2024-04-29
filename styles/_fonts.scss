@@ -1,0 +1,129 @@
+/*
+to all fonts:
+https://web.dev/font-display/?utm_source=lighthouse&utm_medium=unknown#how-to-avoid-showing-invisible-text
+
+https://stackoverflow.com/questions/33687468/how-to-use-font-family-with-same-name
+*/
+@font-face {
+  font-family: "intive-05-2023";
+  src: url("/fonts/intive-05-2023.woff") format("woff"), url("/fonts/intive-05-2023.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "MaisonNeue";
+  src: url("/fonts/MaisonNeue-Light.woff") format("woff"), url("/fonts/MaisonNeue-Light.woff2") format("woff2"),
+    url("/fonts/MaisonNeue-Light.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "MaisonNeue";
+  src: url("/fonts/MaisonNeue-LightItalic.woff") format("woff"), url("/fonts/MaisonNeue-LightItalic.woff2") format("woff2"),
+    url("/fonts/MaisonNeue-LightItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "MaisonNeue";
+  src: url("/fonts/MaisonNeue-Medium.woff") format("woff"), url("/fonts/MaisonNeue-Medium.woff2") format("woff2"),
+    url("/fonts/MaisonNeue-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "MaisonNeue";
+  src: url("/fonts/MaisonNeue-MediumItalic.woff") format("woff"), url("/fonts/MaisonNeue-MediumItalic.woff2") format("woff2"),
+    url("/fonts/MaisonNeue-MediumItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "MaisonNeue";
+  src: url("/fonts/MaisonNeue-Bold.woff") format("woff"), url("/fonts/MaisonNeue-Bold.woff2") format("woff2"),
+    url("/fonts/MaisonNeue-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "MaisonNeue";
+  src: url("/fonts/MaisonNeue-BoldItalic.woff") format("woff"), url("/fonts/MaisonNeue-BoldItalic.woff2") format("woff2"),
+    url("/fonts/MaisonNeue-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "MaisonNeue-Book";
+  src: url("/fonts/MaisonNeue-Book.woff") format("woff"), url("/fonts/MaisonNeue-Book.woff2") format("woff2"),
+    url("/fonts/MaisonNeue-Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "MaisonNeue-Book";
+  src: url("/fonts/MaisonNeue-BookItalic.woff") format("woff"), url("/fonts/MaisonNeue-BookItalic.woff2") format("woff2"),
+    url("/fonts/MaisonNeue-BookItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "MaisonNeue-Demi";
+  src: url("/fonts/MaisonNeue-Demi.woff") format("woff"), url("/fonts/MaisonNeue-Demi.woff2") format("woff2"),
+    url("/fonts/MaisonNeue-Demi.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "MaisonNeue-Demi";
+  src: url("/fonts/MaisonNeue-DemiItalic.woff") format("woff"), url("/fonts/MaisonNeue-DemiItalic.woff2") format("woff2"),
+    url("/fonts/MaisonNeue-DemiItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "MaisonNeue-Mono";
+  src: url("/fonts/MaisonNeue-Mono.woff") format("woff"), url("/fonts/MaisonNeue-Mono.woff2") format("woff2"),
+    url("/fonts/MaisonNeue-Mono.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "MaisonNeue-Mono";
+  src: url("/fonts/MaisonNeue-MonoItalic.woff") format("woff"), url("/fonts/MaisonNeue-MonoItalic.woff2") format("woff2"),
+    url("/fonts/MaisonNeue-MonoItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Material Symbols Outlined";
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+  src: url("/fonts/MaterialSymbols.woff") format("woff"), url("/fonts/MaterialSymbols.woff2") format("woff2");
+}

@@ -1,0 +1,77 @@
+@import "@/styles/mixins";
+
+.app-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: $z-index-level-2;
+
+  &__link--white,
+  &__link--white:visited {
+    color: $white;
+  }
+
+  &__link--is-active {
+    color: $color-intive-cerise;
+  }
+
+  @include device-with-cursor-and-hover {
+    &__link:hover {
+      position: relative;
+
+      &::before {
+        background-color: $color-intive-cerise;
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        z-index: -1;
+      }
+    }
+  }
+
+  & > *:not(:first-child):not(.drawer) {
+    margin-left: 2rem;
+  }
+
+  .drawer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .page-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 2.5rem;
+    }
+
+    .drawer__item {
+      cursor: pointer;
+    }
+
+    .drawer__item > span:hover {
+      position: relative;
+
+      &::before {
+        background-color: $color-intive-cerise;
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        z-index: 1;
+      }
+    }
+
+    .drawer__item:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
+      padding-top: 2rem;
+    }
+
+    .drawer__item:not(:nth-child(3n)) {
+      border-right: 1px solid $color-intive-cerulean;
+    }
+  }
+}

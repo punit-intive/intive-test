@@ -1,0 +1,109 @@
+@import "@/styles/mixins";
+
+.presenter-parallel {
+  width: 90vw;
+  left: 51%;
+  overflow: hidden;
+  transform: translateX(-50%);
+  position: relative;
+  cursor: pointer;
+
+  @include desktop-m-intive-up {
+    width: 100%;
+  }
+
+  &__viewport {
+    display: flex;
+    height: 12.375rem;
+    touch-action: pan-y;
+    position: relative;
+    transition: transform 1s ease-out;
+
+    @include tablet-m-intive-up {
+      height: 11.15rem;
+    }
+
+    @include desktop-m-intive-up {
+      height: 9.57rem;
+    }
+  }
+
+  &__media {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+
+    @include tablet-m-intive-up {
+      height: 100%;
+      max-width: 10.57rem;
+      max-height: 10.57rem;
+      justify-content: unset;
+    }
+
+    @include desktop-m-intive-up {
+      max-width: 9.57rem;
+      max-height: 9.57rem;
+    }
+  }
+
+  &__image {
+    display: flex;
+    align-self: stretch;
+    flex: 0.8;
+    height: 100%;
+    width: 100%;
+
+    img {
+      border-radius: 0.5rem;
+      object-fit: cover;
+    }
+
+    @include tablet-m-intive-up {
+      flex: 1;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    width: 40%;
+    bottom: 1.858rem;
+    margin-left: 1rem;
+    justify-items: flex-start;
+    color: $color-intive-white;
+    transition: opacity 0.3s ease-out;
+    opacity: 1;
+
+    @include tablet-m-intive-up {
+      width: 15%;
+      margin-left: 0.75rem;
+      bottom: 1.858rem;
+      opacity: 0;
+    }
+
+    @include desktop-m-intive-up {
+      width: 15%;
+      word-wrap: break-word;
+      bottom: 0.575rem;
+    }
+
+    @include device-with-cursor-and-hover {
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__viewport > *:not(:last-child) {
+    margin-right: 0.625rem;
+
+    @include tablet-m-intive-up {
+      margin-right: 0.5rem;
+    }
+
+    @include desktop-m-intive-up {
+      margin-right: 0.416rem;
+    }
+  }
+}

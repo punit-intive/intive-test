@@ -1,0 +1,24 @@
+@import "@/styles/_mixins";
+@import "@/styles/_variables";
+
+.request-form {
+  &__input {
+    &-submit {
+      margin-top: 60px;
+      @include button($color-intive-grey-20);
+
+      @include mobile-intive {
+        margin-top: 40px;
+      }
+    }
+
+    &:hover,
+    &:visited,
+    &:active,
+    &:focus {
+      background-color: $white;
+      color: $color-intive-cerulean;
+      transition: $transition-default;
+    }
+  }
+}

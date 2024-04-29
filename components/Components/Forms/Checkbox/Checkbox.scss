@@ -1,0 +1,55 @@
+@import "../../../styles/mixins";
+
+.form-generic {
+  .n-checkbox {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 20px;
+
+    label {
+      order: 2;
+      width: 80%;
+      color: $color-intive-black;
+
+      strong {
+        font-weight: 500;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  input[type="checkbox"] {
+    display: grid;
+    place-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: $color-intive-white;
+    margin: 0;
+    border: 2px solid $color-intive-cerulean;
+    border-radius: $radius-small;
+  }
+
+  input[type="checkbox"]::before {
+    font-family: "Material Symbols Outlined";
+    content: "\e5ca";
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $color-intive-cerulean;
+    transition: 200ms opacity ease-in-out;
+    opacity: 0;
+  }
+
+  input[type="checkbox"]:checked::before {
+    opacity: 1;
+  }
+
+  .n-checkbox--error {
+    label {
+      color: $color-form-error;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "@/styles/mixins";
+
+.brandCarousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+  }
+}

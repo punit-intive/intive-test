@@ -1,0 +1,418 @@
+@import "fonts";
+@import "icons";
+@import "theme";
+@import "mixins";
+@import "columns";
+@import "search-classic";
+@import "dropdowns";
+
+html {
+  overflow-x: hidden !important;
+}
+
+html,
+body {
+  color: $color-intive-default-black;
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+blockquote,
+body,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+iframe,
+legend,
+li,
+ol,
+p,
+pre,
+textarea,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+input,
+select,
+textarea {
+  font-family: $font-default;
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 100;
+  word-break: break-word;
+
+  @include tablet-m-intive-up {
+    font-size: 20px;
+  }
+
+  @include desktop-m-intive-up {
+    font-size: 24px;
+  }
+}
+
+h1 {
+  font-family: $font-default;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 120%;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: $font-default;
+  font-weight: 700;
+  font-size: 1.625rem;
+  line-height: 120%;
+  margin-bottom: 0.9rem;
+}
+
+h3 {
+  font-family: $font-default;
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 120%;
+  margin-bottom: 0.8rem;
+}
+
+h4 {
+  font-family: $font-default;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 120%;
+  margin-bottom: 0.7rem;
+}
+
+h5 {
+  font-family: $font-default;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 0.65rem;
+}
+
+a {
+  text-decoration: none;
+  color: $color-link;
+}
+
+a :not(div, span, button, i, b, h1, h2, h3, h4, h5) {
+  font-family: $font-default;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 120%;
+  color: $color-link;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: underline;
+}
+
+button,
+.button {
+  font-family: $font-default;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.caption {
+  font-family: $font-default;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 120%;
+}
+
+.body-2,
+.blog-post .body-2 {
+  font-family: $font-default;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 120%;
+}
+
+.body-3 {
+  font-family: $font-default;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 120%;
+}
+
+.subtitle {
+  font-family: $font-default;
+  font-weight: 300;
+  font-size: 1.188rem;
+  line-height: 120%;
+}
+
+.overline {
+  font-family: $font-default;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+ol:not(.ol-classic):not(.ol-none),
+ul:not(.ul-classic):not(.ul-none) {
+  li {
+    margin-bottom: 0.75rem;
+    margin-left: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    list-style: none;
+
+    &:before {
+      content: " ";
+      position: absolute;
+      top: 0.4rem;
+      left: -1rem;
+      display: block;
+      height: 0.5rem;
+      width: 0.5rem;
+      background: #007ac9;
+    }
+  }
+}
+
+ol.ol-classic,
+ul.ul-classic {
+  margin-left: 1rem;
+}
+
+ul.ul-none {
+  list-style-type: none;
+}
+
+table {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+thead > tr {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.nav-link-mobile,
+.nav-link-desktop,
+.nav-link {
+  font-family: $font-default;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.nav-link-desktop,
+.nav-link {
+  font-size: 0.75rem;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+/* FF accessibility disabling: https://stackoverflow.com/questions/71074/how-to-remove-firefoxs-dotted-outline-on-buttons-as-well-as-links/3844452#3844452 */
+:focus {
+  outline: none;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+
+.youtube {
+  position: relative;
+  padding: 24px 0 12px 0;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 24px;
+    left: 12px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      $color-intive-white 0%,
+      $color-intive-white 5%,
+      $color-intive-baby-blue-soft2 5%,
+      $color-intive-baby-blue-soft2 100%
+    );
+    width: 100%;
+  }
+}
+
+.button,
+button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  padding: calc(0.5em - 1px) 1em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: top;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+hr {
+  border: none;
+  display: block;
+  height: 2px;
+  margin: 1.5rem 0;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.is-relative {
+  position: relative !important;
+}
+
+.is-hidden-mobile-intive {
+  @include mobile-intive {
+    display: none !important;
+  }
+}
+
+.is-hidden-tablet-m-intive-up {
+  @include tablet-l-intive {
+    display: none !important;
+  }
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.is-clipped {
+  overflow: hidden !important;
+}
+
+.table-container {
+  max-width: 100%;
+  overflow: auto;
+  overflow-y: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.vault .background-layer--pink-light2,
+.vault-detail .background-layer--pink-light2 {
+  background-color: $color-intive-white;
+}
+
+.vault,
+.vault-detail {
+  & h1,
+  & h2,
+  & h3,
+  & p {
+    color: $color-vault-font;
+  }
+
+  & .subheader {
+    color: $color-vault-font-secondary;
+  }
+}
+
+.scroll-intive::-webkit-scrollbar,
+.n-select__menu-list::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.scroll-intive::-webkit-scrollbar-track,
+.n-select__menu-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-intive::-webkit-scrollbar-thumb,
+.n-select__menu-list::-webkit-scrollbar-thumb {
+  background: $color-intive-cerulean;
+  border-radius: $radius-rounded;
+}
+
+.scroll-intive::-webkit-scrollbar-thumb:hover,
+.n-select__menu-list::-webkit-scrollbar-thumb:hover {
+  background: $color-intive-cerulean-darker;
+}
+
+.mobile-select {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+*:focus {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

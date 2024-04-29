@@ -1,0 +1,66 @@
+@import "./variables";
+
+i.icon {
+  font-family: $font-icon;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &-hamburger:before {
+    content: "\0041";
+  }
+
+  &-close:before {
+    content: "\0042";
+  }
+
+  &-facebook:before {
+    content: "\0043";
+  }
+
+  &-instagram:before {
+    content: "\0044";
+  }
+
+  &-linkedin:before {
+    content: "\0045";
+  }
+
+  &-medium:before {
+    content: "\0046";
+  }
+
+  &-twitter:before {
+    content: "\0047";
+  }
+
+  &-youtube:before {
+    content: "\0048";
+  }
+
+  &-tiktok:before {
+    content: "\004e";
+  }
+
+  &-left-arrow:before {
+    content: "\0049";
+  }
+
+  &-right-arrow:before {
+    content: "\004a";
+  }
+
+  &-arrow-down:before {
+    content: "\004b";
+  }
+
+  &-arrow-up:before {
+    content: "\004c";
+  }
+
+  &-intive-i:before {
+    content: "\004d";
+  }
+}

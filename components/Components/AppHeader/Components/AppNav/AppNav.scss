@@ -1,0 +1,23 @@
+@import "@/styles/mixins";
+
+.app-header {
+  & > .page-content > nav {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & > .page-content > nav:not([class="nav-desktop"]) {
+    display: flex;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  @include desktop-m-intive-up {
+    .nav-desktop {
+      display: flex;
+    }
+  }
+}

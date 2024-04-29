@@ -1,0 +1,16 @@
+@import "@/styles/mixins";
+
+.app-logo {
+  z-index: $z-index-level-2;
+  height: 24px;
+
+  svg {
+    max-width: 100%;
+    height: inherit;
+  }
+
+  &--white svg path {
+    fill: $white;
+    transition: $transition-default;
+  }
+}

@@ -1,0 +1,106 @@
+@import "@/styles/mixins";
+
+.presenter-full-width-clear {
+  width: 101vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 0;
+
+  @include desktop-m-intive-up {
+    width: 100vw;
+  }
+
+  &__media {
+    display: flex;
+    height: 32rem;
+    position: relative;
+    overflow: hidden;
+
+    @include desktop-m-intive-up {
+      height: 27rem;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(36, 36, 36, 0.35);
+  }
+
+  &__info > div {
+    display: flex;
+    flex-direction: column;
+    color: $color-intive-white;
+  }
+
+  &__info > div.page-content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__info h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  &__info h1:last-child {
+    margin-bottom: 0;
+  }
+
+  &__info h3 {
+    margin-bottom: 0;
+  }
+
+  &__rect {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-intive-cerulean-darker;
+
+    &.portal-indicators .indicators-dots-onslide {
+      position: relative;
+      bottom: unset;
+      padding: 0;
+    }
+
+    &.portal-indicators .indicators-arrows-onslide {
+      position: absolute;
+      top: 41%;
+      transform: translateY(-50%);
+      z-index: 9999;
+    }
+
+    &.portal-indicators > &__text + .indicators-dots-onslide {
+      margin-top: 0.5rem;
+    }
+
+    &.portal-indicators > a {
+      margin-top: 0.5rem;
+    }
+
+    &.portal-indicators > .indicators-dots-onslide {
+      margin: 0.825rem;
+    }
+  }
+
+  &__rect:not(.portal-indicators) {
+    display: none;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .portal-indicators .indicators-dots-onslide {
+    position: relative;
+    bottom: unset;
+  }
+}

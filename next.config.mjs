@@ -2,11 +2,20 @@
 import { fileURLToPath } from 'node:url';
 import createJiti from 'jiti';
 const jiti = createJiti(fileURLToPath(import.meta.url));
+import path from 'path';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 jiti('./env');
 
 const nextConfig = {
   reactStrictMode: true,
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  },
+  compiler: {
+    styledComponents: true,
+  },
   images: {
     remotePatterns: [
       {

@@ -8,6 +8,7 @@ export const env = createEnv({
     CONTENTFUL_PREVIEW_ACCESS_TOKEN: z.string().length(43),
     CONTENTFUL_REVALIDATE_SECRET: z.string().min(20),
     CONTENTFUL_PREVIEW_SECRET: z.string().min(20),
+    CONTENTFUL_ENVIRONMENT: z.string().min(4),
   },
   client: {},
   // If you're using Next.js < 13.4.4, you'll need to specify the runtimeEnv manually
@@ -18,6 +19,7 @@ export const env = createEnv({
       process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN,
     CONTENTFUL_REVALIDATE_SECRET: process.env.CONTENTFUL_REVALIDATE_SECRET,
     CONTENTFUL_PREVIEW_SECRET: process.env.CONTENTFUL_PREVIEW_SECRET,
+    CONTENTFUL_ENVIRONMENT: process.env.CONTENTFUL_ENVIRONMENT,
   },
   // For Next.js >= 13.4.4, you only need to destructure client variables:
   // experimental__runtimeEnv: {

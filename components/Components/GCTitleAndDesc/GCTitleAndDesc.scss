@@ -1,0 +1,22 @@
+.gc-title-and-desc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  user-select: none;
+  flex-wrap: wrap;
+
+  & > h2 {
+    position: relative;
+  }
+
+  & > h1:last-child,
+  & > h2:last-child {
+    margin-bottom: 0;
+  }
+
+  & > .cf-text,
+  .learn-more__chapter {
+    margin-bottom: 0;
+  }
+}

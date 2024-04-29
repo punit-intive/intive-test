@@ -1,0 +1,43 @@
+@import "../../../styles/mixins";
+
+.autocomplete {
+  position: relative;
+
+  &__suggestions {
+    position: absolute;
+    width: 100%;
+    max-width: 584px;
+    max-height: 192px;
+    overflow: auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    z-index: 9999;
+    cursor: pointer;
+    margin-top: 5px;
+
+    @include tablet-l-intive-up {
+      width: 260px;
+    }
+
+    @include desktop-l-intive {
+      width: 310px;
+    }
+  }
+
+  &__suggestion {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+
+  &__suggestion--active,
+  &__suggestion:hover {
+    background-color: $color-intive-grey-95;
+  }
+
+  &__error {
+    position: absolute;
+  }
+}

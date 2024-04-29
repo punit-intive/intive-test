@@ -1,7 +1,7 @@
-import Navigation from './../components/navigation';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
+import './globals.scss';
+import AppHeaderSSR from '@/components/Components/AppHeader/AppHeaderSSR';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <Navigation />
+        <AppHeaderSSR isWhiteMenu={false}/>
         {children}
       </body>
     </html>

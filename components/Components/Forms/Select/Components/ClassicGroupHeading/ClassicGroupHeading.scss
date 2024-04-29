@@ -1,0 +1,10 @@
+@import "@/styles/variables";
+
+.group-heading {
+  display: flex;
+  justify-content: space-between;
+
+  i {
+    color: $color-intive-cerulean;
+  }
+}

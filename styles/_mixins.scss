@@ -1,0 +1,157 @@
+@import "variables";
+
+@mixin mobile-intive {
+  @media screen and (max-width: $min-width-intive-tablet-m - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet-m-intive {
+  @media screen and (min-width: $min-width-intive-tablet-m) and (max-width: $min-width-intive-tablet-l - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet-m-intive-up {
+  @media screen and (min-width: $min-width-intive-tablet-m) {
+    @content;
+  }
+}
+
+@mixin mobile-tablet-m-intive {
+  @media screen and (max-width: $min-width-intive-tablet-l - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet-l-intive {
+  @media screen and (min-width: $min-width-intive-tablet-l) and (max-width: $min-width-intive-desktop-m - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet-l-intive-up {
+  @media screen and (min-width: $min-width-intive-tablet-l) {
+    @content;
+  }
+}
+
+@mixin intive-tablet-all {
+  @media screen and (min-width: $min-width-intive-tablet-m) and (max-width: $min-width-intive-desktop-m - 1px) {
+    @content;
+  }
+}
+
+@mixin desktop-m-intive {
+  @media screen and (min-width: $min-width-intive-desktop-m) and (max-width: $min-width-intive-desktop-l - 1px) {
+    @content;
+  }
+}
+
+@mixin desktop-m-intive-up {
+  @media screen and (min-width: $min-width-intive-desktop-m) {
+    @content;
+  }
+}
+
+@mixin desktop-l-intive {
+  @media screen and (min-width: $min-width-intive-desktop-l) {
+    @content;
+  }
+}
+
+@mixin device-with-cursor-and-hover {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
+
+@mixin no-border-no-outline {
+  border: none;
+  outline: none;
+  outline-style: none;
+
+  -webkit-tap-highlight-color: transparent; /* For chrome on android */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Opera and Firefox */
+  &::-moz-focus-inner {
+    border: none !important;
+    border-style: none !important;
+  }
+}
+
+@mixin content-after-rich-text {
+  &:after {
+    content: "\a ";
+    white-space: pre;
+  }
+}
+
+@mixin button($border-color) {
+  background-color: $color-intive-white;
+  border: solid 2px $border-color;
+  color: $color-intive-grey-20;
+  padding: 20px 20px;
+  border-radius: 0;
+  outline: none;
+  transition: $transition-default;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @include mobile-intive {
+    border: solid 1.6px $border-color;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:focus:not(:active),
+  &.is-focused:not(:active) {
+    box-shadow: unset;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: $color-intive-grey-95;
+    border: 2px solid $border-color;
+    border-radius: 0;
+  }
+}
+
+@mixin hover-effect-text-color-change($color, $colorToChange) {
+  background: linear-gradient(to right, $colorToChange, $colorToChange 50%, $color 50%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%;
+  background-position: 100%;
+  transition: $transition-default;
+
+  &:hover {
+    background-position: 0 100%;
+  }
+}
+
+@mixin hover-effect-button($color) {
+  &:visited,
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $white;
+    color: $color;
+    transition: $transition-default;
+  }
+}
+
+@mixin hover-effect-outline-button-white {
+  &:hover {
+    opacity: 0.75;
+  }
+}

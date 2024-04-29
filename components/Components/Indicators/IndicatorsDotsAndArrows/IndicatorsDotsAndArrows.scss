@@ -1,0 +1,12 @@
+.indicators-dots-and-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  cursor: pointer;
+  padding: 1rem;
+
+  .indicators-dots {
+    padding: 0;
+  }
+}

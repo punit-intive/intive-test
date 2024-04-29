@@ -1,0 +1,19 @@
+@import "@/styles/mixins";
+
+.app-header {
+  position: sticky;
+  top: 0;
+  height: 4rem;
+  background-color: $color-intive-white;
+  z-index: 1000;
+
+  @include desktop-l-intive {
+    width: 100%;
+  }
+
+  & > .page-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}

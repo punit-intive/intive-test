@@ -1,0 +1,138 @@
+/* Font */
+$font-default: "MaisonNeue";
+$font-maison-neue-book: "MaisonNeue-Book";
+$font-maison-neue-demi: "MaisonNeue-Demi";
+$font-maison-neue-mono: "MaisonNeue-Mono";
+$font-maison-neue: "MaisonNeue";
+$font-icon: "intive-05-2023";
+
+$font-size-default: 16px;
+
+/* Colors, taken from : https://scene.zeplin.io/project/5ddea744a352c71f090ae1b1 */
+$color-intive-default-black: #000000;
+$color-intive-black: #121212;
+$color-intive-black3: #424242;
+$color-intive-black5: #1a1a1a;
+$color-intive-black6: #4c4c4c;
+$color-intive-black7: #3a3a3a;
+$color-intive-black8: #3d3d3d;
+$color-intive-black9: #575757;
+$color-intive-brownish-grey: #777777;
+$color-intive-grey: rgba(239, 239, 239, 0.3);
+$color-intive-brown-grey: #a0a0a0;
+$color-intive-light-grey: #e6e4e4;
+$color-intive-cerise: #e21776;
+$color-intive-cerulean: #007ac9;
+$color-intive-cerulean-darker: #013b6a;
+$color-intive-soft-pink: #f8a1c9;
+$color-intive-baby-blue: #9fdaff;
+$color-intive-baby-blue-soft: rgba(159, 218, 255, 0.1);
+$color-intive-baby-blue-soft2: rgba(159, 218, 255, 0.2);
+$color-intive-soft-blue: #c7e9ff;
+$color-intive-light-blue: #ecf8ff;
+$color-intive-pink-soft: rgba(248, 161, 201, 0.2);
+$color-intive-white: #ffffff;
+$color-intive-white-rgba: rgba(255, 255, 255, 0.75);
+$color-intive-white2: #f6f6f6;
+$color-form-error: #ea2a3a;
+$color-intive-orange: #fbb466;
+$color-vault-font: #183b56;
+$color-vault-font-secondary: #5a7184;
+$color-intive-grey-shadow: #d6d6d6;
+
+/* Colors grays */
+$color-intive-grey-10: #121212;
+$color-intive-grey-20: #333333;
+$color-intive-grey-50: #777777;
+$color-intive-grey-80: #8a8a8a;
+$color-intive-grey-90: #f0f0f0;
+$color-intive-grey-95: #efefef;
+$color-intive-grey-100: #fafafa;
+
+/* Colors Common */
+$black: hsl(0, 0%, 4%) !default;
+$black-bis: hsl(0, 0%, 7%) !default;
+$black-ter: hsl(0, 0%, 14%) !default;
+$grey-darker: hsl(0, 0%, 21%) !default;
+$grey-dark: hsl(0, 0%, 29%) !default;
+$grey: hsl(0, 0%, 48%) !default;
+$grey-light: hsl(0, 0%, 71%) !default;
+$grey-lighter: hsl(0, 0%, 86%) !default;
+$grey-lightest: hsl(0, 0%, 93%) !default;
+$white-ter: hsl(0, 0%, 96%) !default;
+$white-bis: hsl(0, 0%, 98%) !default;
+$white: hsl(0, 0%, 100%) !default;
+$orange: hsl(14, 100%, 53%) !default;
+$yellow: hsl(48, 100%, 67%) !default;
+$green: hsl(141, 53%, 53%) !default;
+$turquoise: hsl(171, 100%, 41%) !default;
+$cyan: hsl(204, 71%, 53%) !default;
+$blue: hsl(217, 71%, 53%) !default;
+$purple: hsl(271, 100%, 71%) !default;
+$red: hsl(348, 86%, 61%) !default;
+
+$z-index-level-0: 0;
+$z-index-level-1: 1;
+$z-index-level-2: 2000;
+$z-index-level-3: 3000;
+$z-index-level-4: 4000;
+$z-index-level-5: 5000;
+
+$header-height-mobile: 56px;
+$header-height-desktop: 120px;
+
+/* this is according to zeplin designs */
+$navbar-height: 120px;
+$navbar-height-mobile: 72px;
+$default-component-margin: 120px;
+$default-component-margin-tablet: 32px;
+$default-component-margin-desktop: 40px;
+$default-component-tablet-l-margin: 104px;
+$default-component-tablet-margin: 96px;
+$main-header-max-width: 879px;
+$main-header-max-width-tablet: 750px;
+$main-header-subtitle-max-width: 797px;
+$blog-post-content-max-width: 797px;
+$blog-post-content-tablet-l-max-width: 698px;
+$blog-post-content-tablet-max-width: 644px;
+$case-study-description-max-width: 898px;
+$case-study-description-tablet-l-max-width: 781px;
+$case-study-description-tablet-max-width: 643px;
+$work-type-chapter-max-width: 797px;
+$form-max-width: 584px;
+$icon-height-desktop: 64px;
+$icon-height-mobile: 39px;
+$page-header-margin-top: 120px;
+$page-header-margin-top-mobile: 100px;
+$header-info-margin-left: -120px;
+$main-pic-size: abs($header-info-margin-left) - 24px;
+
+/* Page Content margins*/
+$page-content-margin: 120px;
+$page-content-tablet-l-margin: 40px;
+$page-content-tablet-margin: 32px;
+$page-content-mobile-margin: 24px;
+$page-content-tablet-l-vertical-margin: 104px;
+$page-content-tablet-vertical-margin: 96px;
+$page-content-mobile-vertical-margin: 50px;
+
+/* Responsiveness */
+$zeplin-design-max-left-marign: 120px;
+$tablet-viewport-768: 768px;
+$min-width-intive-tablet-m: $tablet-viewport-768;
+$min-width-intive-tablet-l: 1024px;
+$min-width-intive-desktop-m: 1216px;
+$min-width-intive-desktop-l: 1440px;
+
+/* Miscellaneous */
+$easing: ease-out !default;
+$radius-small: 2px !default;
+$radius: 4px !default;
+$radius-medium: 6px !default;
+$radius-large: 10px !default;
+$radius-xxl: 15px !default;
+$radius-rounded: 290486px !default;
+$speed: 86ms !default;
+$color-link: $color-intive-default-black;
+$transition: 0.2s ease-in-out;
+$transition-default: all 0.2s ease-in-out;

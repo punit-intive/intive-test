@@ -1,0 +1,39 @@
+@import "@/styles/mixins";
+
+.media-carousel {
+  &__wrapper {
+    position: relative;
+  }
+
+  .presenter-info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0.714em;
+    left: 0.714em;
+    right: 0.714em;
+    color: $color-intive-white;
+
+    & > span:first-child:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    @include tablet-m-intive-up {
+      bottom: 1.25em;
+      left: 1.25em;
+      right: 1.25em;
+      line-height: 1.25em;
+    }
+
+    @include desktop-l-intive {
+      bottom: 1.5em;
+      left: 1.5em;
+      right: 1.5em;
+      line-height: 1.5em;
+    }
+  }
+
+  .gatsby-image-wrapper {
+    flex: 1;
+  }
+}

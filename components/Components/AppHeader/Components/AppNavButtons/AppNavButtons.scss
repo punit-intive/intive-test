@@ -1,0 +1,20 @@
+@import "@/styles/mixins";
+
+.app-buttons {
+  display: flex;
+  justify-content: flex-end;
+
+  @include desktop-m-intive-up {
+    width: 5.25rem;
+  }
+
+  & > div:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__separator {
+    width: 1px;
+    background-color: $color-intive-default-black;
+    align-self: stretch;
+  }
+}

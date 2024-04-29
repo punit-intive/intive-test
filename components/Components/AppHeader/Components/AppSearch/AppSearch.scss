@@ -1,0 +1,14 @@
+.app-search {
+  padding: 1rem 0 1.75rem 0;
+
+  form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  form > div:not(:last-child) {
+    flex: 1;
+    margin-right: 0.35rem;
+  }
+}

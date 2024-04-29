@@ -1,0 +1,111 @@
+@import "@/styles/variables";
+
+.form-generic {
+  .n-select-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .n-select-container--error {
+    .n-select-container__error {
+      position: absolute;
+      bottom: -25px;
+      color: $color-form-error;
+    }
+
+    .n-select-container__error,
+    .n-select__placeholder {
+      color: $color-form-error;
+    }
+  }
+
+  .n-select {
+    color: $color-intive-black;
+
+    &__control {
+      min-width: 12.5rem;
+      min-height: 3.125rem;
+      background-color: $color-intive-white;
+      border-color: $color-intive-black;
+    }
+
+    &__control:hover {
+      border-color: $color-intive-black;
+    }
+
+    &__control--is-focused {
+      border-width: 2px;
+      border-color: $color-intive-black;
+      box-shadow: none;
+    }
+
+    &__control--menu-is-open {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &__indicator-separator {
+      display: none;
+    }
+
+    &__indicator {
+      padding: 0.5rem 1rem;
+      color: $color-intive-cerulean;
+    }
+
+    &__value-container {
+      padding: 0 1rem;
+    }
+
+    &__placeholder {
+      color: $color-intive-black;
+    }
+
+    &__menu {
+      border-color: $color-intive-black;
+      border-width: 1px;
+      border-style: solid;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    &__menu-list {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &__option,
+    &__options-control {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    &__options-control {
+      justify-content: flex-end;
+      color: $color-intive-cerulean;
+      border-bottom: 1px solid $color-intive-black;
+    }
+
+    &__options-control > span {
+      cursor: pointer;
+    }
+
+    &__options-control span:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &__option:not(:last-child) {
+      border-bottom: 1px solid $color-intive-black;
+    }
+
+    &__clear-all--disabled,
+    &__select-all--disabled {
+      color: $color-intive-brown-grey;
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.work-type.automotive,
+.work-type-spec.automotive {
+  .page-header__title u {
+    background: linear-gradient(
+      180deg,
+      white 0%,
+      white 60%,
+      var(--theme-shadow-color) 61%,
+      var(--theme-shadow-color) 90%,
+      white 90%,
+      white 100%
+    );
+  }
+
+  .hero__shadow {
+    background-color: var(--theme-shadow-secondary-color);
+  }
+
+  .learn-more__chapter-text {
+    color: var(--theme-primary-color);
+  }
+
+  .service-items__item--is-hoverable:hover .service-items__item-texts-title {
+    color: var(--theme-hover-color);
+  }
+
+  .learn-more--intive-cerulean:after {
+    background-color: var(--theme-primary-color);
+  }
+
+  .quote__sign {
+    color: var(--theme-secondary-color);
+  }
+
+  .contact-teaser .learn-more__chapter-text {
+    color: var(--theme-tertiary-color);
+  }
+
+  .contact-teaser .learn-more__chapter-text:after {
+    color: var(--theme-tertiary-color);
+  }
+
+  .blog-article-teaser:hover {
+    color: var(--theme-hover-color);
+  }
+
+  .cf-text__blocks-unordered-list li::before {
+    background-color: var(--theme-primary-color);
+  }
+
+  .jobs-tiles .jobs-tiles__icon {
+    color: var(--theme-primary-color);
+  }
+
+  .jobs-tiles .jobs-tiles__tile:hover .jobs-tiles__title {
+    color: var(--theme-hover-color);
+  }
+}

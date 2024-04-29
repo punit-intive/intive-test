@@ -1,0 +1,44 @@
+@import "./variables";
+
+.dropdown-tiny {
+  cursor: pointer;
+
+  & div,
+  & i.icon {
+    font-size: 0.67rem;
+  }
+
+  & .dropdown-tiny__control {
+    border: none;
+    box-shadow: none;
+    min-height: unset;
+    cursor: pointer;
+  }
+
+  & .dropdown-tiny__indicator {
+    padding: 0;
+  }
+
+  & .dropdown-tiny__value-container,
+  & .dropdown-tiny__indicators {
+    padding: 0 8px 0 0;
+  }
+
+  & .dropdown-tiny__option {
+    word-break: normal;
+    cursor: pointer;
+  }
+
+  & .dropdown-tiny__value-container {
+    min-width: 45px;
+    justify-content: center;
+  }
+
+  & .dropdown-tiny__placeholder {
+    color: $color-intive-black;
+  }
+
+  & .dropdown-tiny__menu {
+    z-index: 99999;
+  }
+}
